@@ -38,17 +38,17 @@ export const FulfillmentCondition: React.FC<Props> = ({
                 <TableCell className="font-medium">i = {index + 1}</TableCell>
                 <TableCell>
                   {"|b"}
-                  <span className="text-[10px]">{index + 1}</span>
+                  <i className="text-[10px]">{index + 1}</i>
                   {`|=${Math.abs(mainDiagonal[index].value)},`}
                 </TableCell>
                 <TableCell>
                   {"|a"}
-                  <span className="text-[10px]">{index + 1}</span>
+                  <i className="text-[10px]">{index + 1}</i>
                   {`|=${Math.abs(bottomSideDiagonal[index].value)},`}
                 </TableCell>
                 <TableCell>
                   {"|c"}
-                  <span className="text-[10px]">{index + 1}</span>
+                  <i className="text-[10px]">{index + 1}</i>
                   {`|=${Math.abs(upperDiagonal[index].value)},`}
                 </TableCell>
                 <TableCell>

@@ -16,7 +16,6 @@ export const Fault: React.FC<Props> = ({ roots, className }) => {
     fault,
     vectorB,
   } = calcFault(A, roots, d);
-  console.log("fault: ", fault);
 
   return (
     <>
@@ -27,65 +26,59 @@ export const Fault: React.FC<Props> = ({ roots, className }) => {
         <TableBody className="text-nowrap">
           <TableRow className="flex items-center">
             <TableCell className="font-medium">
-              <span className="text-sm">
-                {"b\u0303"} (Возмущенная правая часть)
-              </span>
+              <i className="text-sm">{"b\u0303"} (Возмущенная правая часть)</i>
             </TableCell>
-            <span className="text-sm">=</span>
+            <i className="text-sm">=</i>
             <TableCell className="font-medium flex gap-2">
               {disturbedRightSide.map((el, index) => {
                 return (
-                  <span key={index}>
+                  <i key={index}>
                     {el}
                     {index === disturbedRightSide.length - 1 ? "" : ","}
-                  </span>
+                  </i>
                 );
               })}
             </TableCell>
           </TableRow>
           <TableRow className="flex items-center">
             <TableCell className="font-medium">
-              <span className="text-sm text-nowrap">
-                {"\u03B4"}b (Вектор b)
-              </span>
+              <i className="text-sm text-nowrap">{"\u03B4"}b (Вектор b)</i>
             </TableCell>
-            <span className="text-sm">=</span>
+            <i className="text-sm">=</i>
             <TableCell className="font-medium flex gap-2">
               {vectorB.map((el, index) => {
                 return (
-                  <span key={index}>
+                  <i key={index}>
                     {el}
                     {index === vectorB.length - 1 ? "" : ","}
-                  </span>
+                  </i>
                 );
               })}
             </TableCell>
           </TableRow>
           <TableRow className="flex items-center">
             <TableCell className="font-medium">
-              <span className="text-sm">
+              <i className="text-sm">
                 ||{"\u03B4"}b|| (Eвклидовая норма вектор b)
-              </span>
+              </i>
             </TableCell>
-            <span className="text-sm">=</span>
+            <i className="text-sm">=</i>
             <TableCell className="font-medium">
               {euclideanNormOfVectorB}
             </TableCell>
           </TableRow>
           <TableRow className="flex items-center">
             <TableCell className="font-medium">
-              <span className="text-sm">
-                ||b|| (Eвклидовая норма правой части)
-              </span>
+              <i className="text-sm">||b|| (Eвклидовая норма правой части)</i>
             </TableCell>
-            <span className="text-sm">=</span>
+            <i className="text-sm">=</i>
             <TableCell className="font-medium">{euclideanNormOfB}</TableCell>
           </TableRow>
           <TableRow className="flex items-center">
             <TableCell className="font-medium">
-              <span className="text-sm">Погрешности полученного решения</span>
+              <i className="text-sm">Погрешности полученного решения</i>
             </TableCell>
-            <span className="text-sm">=</span>
+            <i className="text-sm">=</i>
             <TableCell className="font-medium">{fault}</TableCell>
           </TableRow>
         </TableBody>

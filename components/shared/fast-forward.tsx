@@ -42,12 +42,12 @@ export const FastForward: React.FC<Props> = ({
               <TableRow key={index} className="text-nowrap">
                 <TableCell>
                   {"\u03b1"}
-                  <span className="text-[10px]">{index + 1}</span>
+                  <i className="text-[10px]">{index + 1}</i>
                   {` = ${el}`}
                 </TableCell>
                 <TableCell>
                   {"\u03b2"}
-                  <span className="text-[10px]">{index + 1}</span>
+                  <i className="text-[10px]">{index + 1}</i>
                   {` = ${beta[index]}`}
                 </TableCell>
               </TableRow>

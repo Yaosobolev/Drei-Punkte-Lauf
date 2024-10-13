@@ -45,7 +45,7 @@ export const FastBackward: React.FC<Props> = ({
               <TableRow key={index} className="text-nowrap">
                 <TableCell>
                   {"x"}
-                  <span className="text-[10px]">{index + 1}</span>
+                  <i className="text-[10px]">{index + 1}</i>
                   {` = ${el}`}
                 </TableCell>
               </TableRow>
