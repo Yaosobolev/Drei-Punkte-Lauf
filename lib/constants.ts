@@ -3,6 +3,45 @@ export type AMatrixItem = {
   value: number;
 };
 
+// export const A: AMatrixItem[][] = [
+//   [
+//     { name: "x1", value: 2 },
+//     { name: "x2", value: 1 },
+//     { name: "x3", value: 0 },
+//     { name: "x4", value: 0 },
+//     { name: "x5", value: 0 },
+//   ],
+//   [
+//     { name: "x1", value: 3 },
+//     { name: "x2", value: 7 },
+//     { name: "x3", value: 3 },
+//     { name: "x4", value: 0 },
+//     { name: "x5", value: 0 },
+//   ],
+//   [
+//     { name: "x1", value: 0 },
+//     { name: "x2", value: 2 },
+//     { name: "x3", value: 6 },
+//     { name: "x4", value: 3 },
+//     { name: "x5", value: 0 },
+//   ],
+//   [
+//     { name: "x1", value: 0 },
+//     { name: "x2", value: 0 },
+//     { name: "x3", value: 1 },
+//     { name: "x4", value: 2 },
+//     { name: "x5", value: 1 },
+//   ],
+//   [
+//     { name: "x1", value: 0 },
+//     { name: "x2", value: 0 },
+//     { name: "x3", value: 0 },
+//     { name: "x4", value: 1 },
+//     { name: "x5", value: 2 },
+//   ],
+// ];
+
+// export const d = [3, 13, 11, 4, 3];
 export const A: AMatrixItem[][] = [
   [
     { name: "x1", value: 15 },
